@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CS/styles.css">
+    <script src="JS/scripts.js"></script>
+    <title>CALCULATOR BMI</title>
+</head>
+    
+<body>
+    <header class="judul">
+        <h1>CALCULATOR BMI</h1>
+    </header>
+
+    <main>
+        <article>
+            <h2><strong>Apa Itu BMI (Body Mass Index)?</strong></h2> 
+            <p>
+                BMI atau Body Mass Index (Indeks Massa Tubuh) adalah pengukuran yang digunakan untuk menentukan apakah berat badan seseorang termasuk dalam kategori kurang, normal, berlebih, atau obesitas. BMI dihitung dengan menggunakan berat dan tinggi badan seseorang dan memberikan indikasi kasar mengenai status berat badan mereka. Ini adalah alat yang sering digunakan oleh profesional kesehatan untuk menilai risiko kesehatan yang terkait dengan berat badan.
+            </p>
+        </article>
+        <section>  
+
+            <div class="container">
+                <div class="form-container">
+                    <h2>Input Form</h2>
+                </div>
+
+                <form class="input-data" onsubmit="calculateBMI(event);">
+                        <br>
+                        <div>
+                        <label class="input-data-people">Berat Badan (kg)</label>
+                        <input class="berat-badan" id="weight" type="number" step="0.1">
+                        </div>
+                        <div>     
+                        <label class="input-data-people">Tinggi Badan (cm)</label>
+                        <input class="tinggi-badan" id="height" type="number" step="0.1">
+                        </div>
+                        <div>     
+                        <label class="input-data-people">Usia</label>
+                        <input class="usia" type="number">
+                        </div>
+                        <div>
+                            <input class="gender" type="radio" id="man" name="fav_language" value="MAN">
+                            <label class="gender" for="man">Laki-Laki</label><br>
+                            <input class="gender" type="radio" id="woman" name="fav_language" value="WOMAN">
+                            <label class="gender" for="woman">Perempuan</label><br>
+                        </div>
+                        <p>
+                            <button class="tombol" type="submit">Hitung BMI</button>
+                            <button class="tombol" type="reset">Reset</button>
+                        </p>
+                </form>
+
+            </div>
+        </section>
+
+        <section>
+            <form class="input-data-keterangan">
+                <div>
+                    <h3>Hasil</h3>
+                    <div>
+                        <input id="display" name="display" class="score" readonly>
+                    </div>
+                    <br>
+                        <input id="bmi-description" name="display" class="bmi-deskripsi" readonly>
+                </div>
+            </form>
+
+            <article>
+                <h2>Keunggulan fitur</h2>
+                <p>
+                    
+                    <li>Menghitung berat badan</li>
+                    <li>Menentukan kategori berat badan ideal atau tidak</li>
+                    <li>Mempersiapkan program penurunan berat badan</li>
+                    <br>
+                    Kalkulator ini akan memberi anda gambaran tentang perbandingan berat badan anda dengan nilai umum, Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan kuadrat tinggi badan anda (dalam meter) atau BMI=Kg/M <sup>2</sup>
+                    <br>
+                    <h3>Kurus</h3>
+                    <li>BMI Kurang dari 18.5</li>
+                    <li>Individu dengan BMI kurus mungkin mengalami risiko kekurangan gizi, kurangnya energi, gangguan reproduksi, atau masalah kesehatan lainnya terkait berat badan rendah.</li>
+                    <h3>Normal</h3>
+                    <li>BMI antara 18.5 dan 24.9.</li>
+                    <li>Orang dengan BMI normal umumnya memiliki risiko lebih rendah terhadap sejumlah masalah kesehatan yang terkait dengan berat badan, seperti penyakit jantung dan diabetes tipe 2.</li>
+                    <h3>Berat Badan Berlebih</h3>
+                    <li>BMI antara 25 dan 29.9.</li>
+                    <li>Orang dengan berat badan berlebih mungkin mengalami peningkatan risiko terkena penyakit jantung, diabetes tipe 2, tekanan darah tinggi (hipertensi), dan beberapa jenis kanker.</li>
+                    <h3>Obesitas</h3>
+                    <li>BMI 30 atau lebih.</li>
+                    <li>Obesitas meningkatkan risiko serius terhadap sejumlah kondisi kesehatan seperti penyakit jantung koroner, stroke, diabetes tipe 2, osteoartritis, sleep apnea (gangguan tidur), dan beberapa jenis kanker (seperti kanker payudara, usus besar, dan hati).</li>
+                </p>
+            </article>
+
+            <article>
+                <header>
+                    <h1></h1>
+                </header>
+
+                <section></section>
+            
+            </article>
+        </section>
+    </main>
+</body>
